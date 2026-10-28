@@ -1,8 +1,56 @@
-body{
-    margin: 0;
+@font-face {
+    font-family: youngserif400;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: outfit400;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: outfit600;
+    src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: outfit700;
+    src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    /* colors */
+  --white: hsl(0, 0%, 100%);
+  --stone_100: hsl(30, 54%, 90%);
+  --stone_150: hsl(30, 18%, 87%);
+  --stone_600: hsl(30, 10%, 34%);
+  --stone_900: hsl(24, 5%, 18%);
+  --brown_800: hsl(14, 45%, 36%);
+  --rose_800: hsl(332, 51%, 32%);
+  --rose_50: hsl(330, 100%, 98%);
+
+
+  /* fonts */
+    --font_youngserif400: 'youngserif400', serif;
+    --font_outfit400: 'outfit400', sans-serif;
+    --font_outfit600: 'outfit600', sans-serif;
+    --font_outfit700: 'outfit700', sans-serif;
+
+}
+
+body {
+  margin: 0;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
