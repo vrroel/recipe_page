@@ -14,7 +14,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution {
+    .attribution p{
       font-size: 0.6875rem;
       text-align: center;
     }
@@ -27,9 +27,9 @@
 
 <body>
 
-  <main>
+  <main class="main">
     <img src="./assets/images/image-omelette.jpeg" alt="">
-    <article>
+    <article class="content_wrapper">
       <section class="recipe_info">
         <h1 class="main_title">Simple Omelette Recipe</h1>
         <p class="recipe_info">
@@ -39,16 +39,16 @@
       </section>
 
       <section class="recipe_time">
-        <h3>Preparation time</h3>
+        <h3 class="sub_title--variation">Preparation time</h3>
         <ul>
           <li><b>Total:</b> Approximately 10 minutes</li>
           <li><b>Preparation:</b> 5 minutes</li>
           <li><b>Cooking:</b> 5 minutes</li>
         </ul>
       </section>
-
+      <!-- <hr> -->
       <section class="recipe_ingredients">
-        <h2>Ingredients</h2>
+        <h2 class="sub_title">Ingredients</h2>
         <ul>
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
@@ -57,10 +57,10 @@
           <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
       </section>
-
+      <!-- <hr> -->
       <section class="recipe_instructions">
 
-        <h2>Instructions</h2>
+        <h2 class="sub_title">Instructions</h2>
         <ol>
           <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
             You
@@ -79,7 +79,7 @@
       </section>
 
       <section class="recipe_nutrition">
-        <h2>Nutrition</h2>
+        <h2 class="sub_title">Nutrition</h2>
         <p>The table below shows nutritional values per serving without the additional fillings.</p>
         <table>
           <tr>
@@ -104,8 +104,8 @@
   </main>
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+    <p>Coded by<a href="https://vrroel.github.io/frontend_mentor_hub/">Alexis Villarroel</a>.</p>
   </footer>
 </body>
 

@@ -1,33 +1,33 @@
 @font-face {
-    font-family: youngserif400;
-    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
+  font-family: youngserif400;
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: outfit400;
-    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-    font-weight: 400;
-    font-style: normal;
+  font-family: outfit400;
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: outfit600;
-    src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
-    font-weight: 600;
-    font-style: normal;
+  font-family: outfit600;
+  src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: outfit700;
-    src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
+  font-family: outfit700;
+  src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
 }
 
 :root {
-    /* colors */
+  /* colors */
   --white: hsl(0, 0%, 100%);
   --stone_100: hsl(30, 54%, 90%);
   --stone_150: hsl(30, 18%, 87%);
@@ -37,20 +37,143 @@
   --rose_800: hsl(332, 51%, 32%);
   --rose_50: hsl(330, 100%, 98%);
 
-
   /* fonts */
-    --font_youngserif400: 'youngserif400', serif;
-    --font_outfit400: 'outfit400', sans-serif;
-    --font_outfit600: 'outfit600', sans-serif;
-    --font_outfit700: 'outfit700', sans-serif;
+  --font_youngserif400: "youngserif400", serif;
+  --font_outfit400: "outfit400", sans-serif;
+  --font_outfit600: "outfit600", sans-serif;
+  --font_outfit700: "outfit700", sans-serif;
+}
 
+
+*{
+    box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: var(--font_outfit400);
+  line-height: 1.5;
+  color: var(--stone_900);
+  background: var(--stone_100);
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.main {
+    max-width: 45rem;
+    margin: 0 auto;
+    background: var(--white);
+
+}
+
+section {
+  margin: 2rem 0;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+section:nth-child(4) {
+  border-bottom: 1px solid var(--stone_150);
+  border-top: 1px solid var(--stone_150);
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.7rem;
+  margin-bottom: 0;
+}
+
+li {
+  padding-left: 1rem;
+  margin-top: 0.8rem;
+}
+
+li::marker {
+  color: var(--brown_800);
+  font-weight: bold;
+}
+
+.content_wrapper {
+  padding: 1rem 2rem;
+}
+
+.main_title {
+  font-family: var(--font_youngserif400);
+  font-weight: normal;
+  font-size: 2.2rem;
+  color: var(--stone_900);
+  margin: 0;
+}
+
+.sub_title {
+  font-size: 1.5rem;
+  color: var(--brown_800);
+  font-family: var(--font_youngserif400);
+}
+
+.recipe_time {
+  background-color: hsla(332, 51%, 32%, 0.123);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.sub_title--variation {
+  color: var(--rose_800);
+  margin: 0;
+  padding: 0;
+}
+
+.sub_title--variation li::marker {
+  color: var(--rose_80);
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 1rem 0;
+}
+
+tr td:first-child {
+    margin-left: 1.5rem;
+}
+
+tr td:nth-child(even){
+    color:var(--brown_800);
+    font-weight: bold;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--stone_150);
+}
+
+@media screen and (min-width:40rem) {
+    .main {
+        padding: 2rem 2rem;
+        margin: 5rem auto;
+        border-radius: 20px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .content_wrapper {
+        padding: 0;
+    }
+    
 }
